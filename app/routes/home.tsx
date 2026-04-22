@@ -47,12 +47,15 @@ export default function Home() {
     <Navbar/>
 
     <section className="main-section">
-      <div className="page-heading py-16">
-        <h1>Track Your Application & Resume Ratings</h1>
+      <div className="page-heading py-8">
+        <h1>Track Your <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+        Applications
+      </span> & Resume Ratings</h1>
+        <h2 className="font-extrabold italic ">Better Inputs. Better Outcomes. ✨</h2>
 
         {!loadingResumes ? (
           resumes?.length === 0 ? (
-            <h2>No resumes found, upload your first resume to get feedback</h2>
+            <h1>No resumes found, upload your first resume to get feedback</h1>
           ) : (
             <h2>Review your submissions and check AI-powered feedback</h2>
           )
