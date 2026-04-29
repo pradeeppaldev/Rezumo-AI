@@ -4,6 +4,7 @@ import ResumeCard from "~/components/ResumeCard";
 import { usePuterStore } from "~/lib/puter";
 import { useNavigate, Link } from "react-router";
 import { useEffect, useState } from "react";
+import Footer from "~/components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -84,5 +85,6 @@ export default function Home() {
         </div>
       )}
     </section>
+    <Footer />
   </main>;
 }
